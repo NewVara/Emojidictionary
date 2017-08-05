@@ -64,7 +64,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-ej-OAx">
-                                <rect key="frame" x="109.5" y="393" width="156" height="21"/>
+                                <rect key="frame" x="109" y="393" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catergory: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iL-qt-kXM">
+                                <rect key="frame" x="119.5" y="434" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvO-TM-2ZB">
+                                <rect key="frame" x="129" y="475" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,11 +86,17 @@
                         <constraints>
                             <constraint firstItem="ml1-ej-OAx" firstAttribute="centerX" secondItem="TKM-V1-MhG" secondAttribute="centerX" id="Lg0-jf-mrH"/>
                             <constraint firstItem="MVE-Ez-J7v" firstAttribute="centerX" secondItem="TKM-V1-MhG" secondAttribute="centerX" id="RjF-YS-5qG"/>
+                            <constraint firstItem="qvO-TM-2ZB" firstAttribute="top" secondItem="6iL-qt-kXM" secondAttribute="bottom" constant="20" id="Vyf-km-pnc"/>
+                            <constraint firstItem="6iL-qt-kXM" firstAttribute="centerX" secondItem="TKM-V1-MhG" secondAttribute="centerX" id="ZlC-io-4v3"/>
                             <constraint firstItem="ml1-ej-OAx" firstAttribute="top" secondItem="MVE-Ez-J7v" secondAttribute="bottom" constant="50" id="ceU-gK-asb"/>
                             <constraint firstItem="MVE-Ez-J7v" firstAttribute="top" secondItem="9fQ-Mw-nPS" secondAttribute="bottom" constant="40" id="duc-Bg-spH"/>
+                            <constraint firstItem="qvO-TM-2ZB" firstAttribute="centerX" secondItem="TKM-V1-MhG" secondAttribute="centerX" id="tHq-RG-kYb"/>
+                            <constraint firstItem="6iL-qt-kXM" firstAttribute="top" secondItem="ml1-ej-OAx" secondAttribute="bottom" constant="20" id="zMU-Bh-ACv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="qvO-TM-2ZB" id="uOX-4g-BfZ"/>
+                        <outlet property="categoryLabel" destination="6iL-qt-kXM" id="EPb-z8-Td8"/>
                         <outlet property="definitionLabel" destination="ml1-ej-OAx" id="jUa-QG-742"/>
                         <outlet property="emojiLabel" destination="MVE-Ez-J7v" id="8SH-C7-zEQ"/>
                     </connections>
